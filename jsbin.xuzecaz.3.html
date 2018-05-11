@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by Balla1987 (http://jsbin.com/xuzecaz/3/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<canvas id="myCanvas" height="300" width="450" style="border: 1px solid black"></canvas>
+<script id="jsbin-javascript">
+var canvas = document.getElementById('myCanvas');
+var context = canvas.getContext('2d');
+
+for(i=0;i<15;i++){
+context.fillStyle='rgba(33, 34, 34, 0.5)';
+if(i%3==2)
+context.fillStyle='rgba(56, 59, 224, 0.7)';
+if(i%5==4)
+context.fillStyle='rgba(231, 226, 52, 0.7)';
+if(i%5==4 && i%3==2)
+context.fillStyle = 'rgba(53, 226, 52, 0.7)';
+context.fillRect(10+15*i,10+15*i,40,40);
+}
+
+
+</script>
+</body>
+</html>
